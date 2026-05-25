@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -37,18 +39,51 @@ overflow-x:hidden;
 }
 
 /* =========================
-   NAVBAR
+   HEADER
 ========================= */
 
 header{
 position:fixed;
 top:0;
 width:100%;
-background:rgba(15,23,42,0.8);
+background:rgba(15,23,42,0.85);
 backdrop-filter:blur(12px);
 z-index:1000;
 box-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
+
+/* =========================
+   TOP CONTACT
+========================= */
+
+.top-contact{
+display:flex;
+justify-content:flex-start;
+align-items:center;
+gap:25px;
+
+padding:10px 20px;
+
+background:rgba(0,0,0,0.25);
+
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.top-contact a{
+text-decoration:none;
+color:#ffffff;
+font-size:14px;
+font-weight:500;
+transition:0.3s;
+}
+
+.top-contact a:hover{
+color:#38bdf8;
+}
+
+/* =========================
+   NAVBAR
+========================= */
 
 nav{
 display:flex;
@@ -89,10 +124,14 @@ padding:20px;
 .hero h1{
 font-size:75px;
 font-weight:800;
+
 background:linear-gradient(90deg,#38bdf8,#22c55e,#2563eb);
+
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
+
 text-shadow:0 5px 20px rgba(0,0,0,0.5);
+
 margin-bottom:20px;
 }
 
@@ -107,14 +146,19 @@ text-shadow:0 2px 10px rgba(0,0,0,0.6);
 .hero .btn{
 margin-top:25px;
 padding:14px 35px;
+
 border:none;
 border-radius:50px;
+
 background:linear-gradient(90deg,#2563eb,#38bdf8);
+
 color:white;
 font-size:18px;
 font-weight:600;
+
 cursor:pointer;
 transition:0.3s;
+
 box-shadow:0 10px 25px rgba(37,99,235,0.4);
 }
 
@@ -147,7 +191,7 @@ color:#e2e8f0;
 }
 
 /* =========================
-   GLASS CARDS
+   FEATURES
 ========================= */
 
 .features{
@@ -161,12 +205,19 @@ margin-top:30px;
 .features div{
 padding:20px;
 min-width:250px;
+
 background:rgba(255,255,255,0.12);
+
 backdrop-filter:blur(12px);
+
 border:1px solid rgba(255,255,255,0.15);
+
 border-radius:18px;
+
 box-shadow:0 8px 25px rgba(0,0,0,0.3);
+
 transition:0.3s;
+
 color:white;
 font-weight:500;
 }
@@ -177,7 +228,7 @@ background:rgba(37,99,235,0.25);
 }
 
 /* =========================
-   SUCCESS SECTION
+   SUCCESS
 ========================= */
 
 .success{
@@ -201,9 +252,13 @@ margin-top:30px;
 width:320px;
 height:230px;
 object-fit:cover;
+
 border-radius:20px;
+
 cursor:pointer;
+
 transition:0.4s;
+
 box-shadow:0 8px 25px rgba(0,0,0,0.35);
 }
 
@@ -220,11 +275,15 @@ display:none;
 position:fixed;
 top:0;
 left:0;
+
 width:100%;
 height:100%;
+
 background:rgba(0,0,0,0.9);
+
 justify-content:center;
 align-items:center;
+
 z-index:2000;
 }
 
@@ -245,12 +304,15 @@ display:flex;
 flex-direction:column;
 
 background:rgba(255,255,255,0.12);
+
 backdrop-filter:blur(15px);
 
 padding:30px;
+
 border-radius:20px;
 
 box-shadow:0 10px 30px rgba(0,0,0,0.35);
+
 border:1px solid rgba(255,255,255,0.15);
 }
 
@@ -259,11 +321,15 @@ textarea,
 select{
 margin:12px 0;
 padding:14px;
+
 border:none;
 border-radius:12px;
+
 background:rgba(255,255,255,0.15);
+
 color:white;
 font-size:15px;
+
 outline:none;
 }
 
@@ -279,6 +345,7 @@ color:black;
 button{
 padding:14px;
 margin-top:10px;
+
 border:none;
 border-radius:12px;
 
@@ -289,6 +356,7 @@ font-size:16px;
 font-weight:600;
 
 cursor:pointer;
+
 transition:0.3s;
 }
 
@@ -316,10 +384,13 @@ right:20px;
 bottom:90px;
 
 background:#25d366;
+
 padding:16px;
+
 border-radius:50%;
 
 font-size:24px;
+
 text-decoration:none;
 
 box-shadow:0 8px 20px rgba(0,0,0,0.3);
@@ -339,9 +410,11 @@ right:20px;
 width:260px;
 
 background:rgba(15,23,42,0.9);
+
 backdrop-filter:blur(10px);
 
 padding:18px;
+
 border-radius:15px;
 
 display:none;
@@ -356,7 +429,7 @@ margin-bottom:10px;
 }
 
 /* =========================
-   CTA BAR
+   CTA
 ========================= */
 
 .cta{
@@ -367,9 +440,13 @@ width:100%;
 background:linear-gradient(90deg,#2563eb,#38bdf8);
 
 color:white;
+
 text-align:center;
+
 padding:14px;
+
 font-weight:600;
+
 cursor:pointer;
 
 z-index:1000;
@@ -383,19 +460,29 @@ box-shadow:0 -5px 15px rgba(0,0,0,0.3);
 
 footer{
 background:rgba(15,23,42,0.9);
+
 padding:25px;
+
 text-align:center;
+
 margin-top:40px;
 }
 
 /* =========================
-   MOBILE RESPONSIVE
+   MOBILE
 ========================= */
 
 @media(max-width:768px){
 
+.top-contact{
+flex-direction:column;
+align-items:center;
+gap:5px;
+padding:10px;
+}
+
 .hero h1{
-font-size:50px;
+font-size:48px;
 }
 
 .hero p{
@@ -403,7 +490,7 @@ font-size:16px;
 }
 
 section h2{
-font-size:32px;
+font-size:30px;
 }
 
 .gallery img{
@@ -419,16 +506,31 @@ margin:6px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <!-- =========================
-     NAVBAR
+     HEADER
 ========================= -->
 
 <header>
+
+<div class="top-contact">
+
+<a href="tel:9344336755">
+📞 9344336755
+</a>
+
+<a href="mailto:infotgcplacement@gmail.com">
+✉ infotgcplacement@gmail.com
+</a>
+
+</div>
+
 <nav>
+
 <a onclick="scrollToSection('home')">Home</a>
 <a onclick="scrollToSection('overview')">Overview</a>
 <a onclick="scrollToSection('why')">Why Join</a>
@@ -436,7 +538,9 @@ margin:6px;
 <a onclick="scrollToSection('sectors')">Sectors</a>
 <a onclick="scrollToSection('gallery')">Gallery</a>
 <a onclick="scrollToSection('contact')">Contact</a>
+
 </nav>
+
 </header>
 
 <!-- =========================
@@ -609,7 +713,6 @@ Gallery
 Contact Us
 </h2>
 
-<!-- WEB3FORMS -->
 <form action="https://api.web3forms.com/submit" method="POST">
 
 <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
@@ -628,21 +731,13 @@ Contact Us
 
 <option value="">Select Sector</option>
 
-<option value="Management">
-Management
-</option>
+<option value="Management">Management</option>
 
-<option value="HR">
-Human Resources
-</option>
+<option value="HR">Human Resources</option>
 
-<option value="Administration">
-Administration
-</option>
+<option value="Administration">Administration</option>
 
-<option value="Distribution">
-Distribution
-</option>
+<option value="Distribution">Distribution</option>
 
 </select>
 
@@ -671,7 +766,7 @@ loading="lazy">
 </section>
 
 <!-- =========================
-     MODAL
+     IMAGE MODAL
 ========================= -->
 
 <div id="modal">
@@ -787,4 +882,5 @@ modal.style.display="none";
 </script>
 
 </body>
+
 </html>
